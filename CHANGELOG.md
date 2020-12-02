@@ -1,4 +1,4 @@
-v2.1.0 - 02 December 2020
+v2.2.0 - 02 December 2020
 ------------------------
 
 Features:
@@ -22,6 +22,18 @@ Other changes:
 * Fixed testing in Pypy3 and explicitly added Python 3.9 support
 * #134 - Documented the release process
 * #143 - Updated GitHub Action hashes to newest rev to address https://github.blog/changelog/2020-10-01-github-actions-deprecating-set-env-and-add-path-commands/ where possible
+
+v2.0.2 - 09 November 2020
+------------------------
+
+Bug fixes:
+
+* #115 - Strange behavior can manifest with invalid sub-commands
+* #117 - Ignore whitespace-only lines in exclusion files
+
+Other changes:
+
+* Fixed testing in Pypy3 and explicitly added Python 3.9 support
 
 v2.0.1 - 09 October 2020
 ------------------------
