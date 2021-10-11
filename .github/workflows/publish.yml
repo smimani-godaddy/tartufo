@@ -15,10 +15,9 @@ jobs:
         python-version: 3.7
     - name: Install dependencies
       run:  |
-        echo ${{ github.ref }}
-        if !${{ github.event.release.prerelease }}
-        then
+        if [ ${{ github.event.release.prerelease }} == true ]; then
           echo "abcd"
+        fi
 #        pip install --upgrade pip
 #        pip install --upgrade poetry
 #    - name: Package and publish with Poetry
