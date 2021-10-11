@@ -15,7 +15,8 @@ jobs:
         python-version: 3.7
     - name: Install dependencies
       run:  |
-        if [ ${{ github.event.release.prerelease }} == true ]; then
+        echo "111"
+        if [ ${{ github.event.release.prerelease }} != true ]; then
           echo "abcd"
         fi
 #        pip install --upgrade pip
