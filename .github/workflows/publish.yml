@@ -16,7 +16,7 @@ jobs:
     - name: Install dependencies
       run:  |
         echo "111"
-        if ![ ${{ github.event.release.prerelease }} != "true" ]; then
+        if [ ${{ github.event.release.prerelease }} != "true" ]; then
           echo "abcd"
         fi
 #        pip install --upgrade pip
